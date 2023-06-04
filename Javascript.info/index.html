@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="enUS">
+    <head>
+        <meta charset="utf8">
+        <title>Function Practice</title>
+    </head>
+    <body>
+        <button onclick="`${pow()}`">Integers to the Nth Power Trial</button>
+        <script>
+
+
+//----Finds the minimum value of two integers and returns it ------//
+            function min(a,b) {
+                if (a < b) {
+                    return (a);
+                }   else {
+                    return (b);
+                }
+            }
+
+/*/----Multiplies x by the n'th power and returns it------//
+
+            function pow() {
+                let x = prompt("Enter the value of x:");
+                    if (x != 0) {
+                      let n = prompt("Enter the value of n:");
+                            if (n = 1) {
+                                return (x);
+                        }   else {
+                                return (x*x, (n-1));
+                        }
+                }  
+                    else {
+                        return("0");}
+            } */
+/*---Actual Result for Above //
+      function pow(x, n) {
+     let result = x;
+
+      for (let i = 1; i < n; i++) {
+    result *= x;
+ }
+
+  return result;
+}
+
+   let x = prompt("x?", '');
+   let n = prompt("n?", '');
+
+  if (n < 1) {
+  alert(`Power ${n} is not supported, use a positive integer`);
+} else {
+  alert( pow(x, n) );}
+*/
+
+    /* -- Arrow functions beginning -- */
+
+    /* Original: 
+    function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+ 
+///----Arrow Version----/////
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  () => alert("You agreed."),
+  () => alert("You canceled the execution.")
+);
+
+*/ 
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Foundations Fundamentals Part 3 - Java functions</title>
+    </head>
+    <body>
+        <button id="add7" onclick="`${add7()}`">Add 7 Function: Click Here to Start</button>
+
+    <script>   
+
+        function add7() {
+           let input = prompt("Enter any number:");
+                if (isNaN(input)) {
+                    alert("You must enter a number!");
+                }  else {
+                    alert(eval(input) + 7);
+                }
+            }
+
+        function multiply(a,b) {
+            if (isNaN(a)) {
+                alert("Both values must be integers.");
+            }  else if (isNaN(b)) {
+                alert("Both values must be integers.");
+            }   else {    
+                return(a * b);
+            }          
+        }
+
+    
+
+        function lastLetter() {
+            let string = prompt("Enter any string:");
+            let stringLength = console.log(string.length);
+            let n = stringLength;
+            let result = string.charAt(0 + n);
+            alert(result);            
+        }
+
+        lastLetter()
+        
+
+
+    </script>    
+
+
+
+    </body>
+</html>
