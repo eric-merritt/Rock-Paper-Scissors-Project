@@ -13,33 +13,50 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
 
-    <section class='preview'>
-
-
-
-    </section>
-
   <script>
-    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
-    const para = document.createElement('p'); 
-
-
-
-    function chooseName() {
+  const names = new Array ('Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada');    
+  
+  function chooseName() {
+      for (let i = 0; i < names.length; i++){
+        if (i == 0){
+          return names.push(Math.floor(Math.random() * names.length));
+        } else {
+          continue;
+        }
+      }
       
       }
+    const para = document.createElement('p');
+    para.innerText = names.slice("",1);
+    const newDiv = document.createElement('div');
+
+    document.body.appendChild(newDiv);
+    document.body.append(para);
+
+    newDiv.append(para);
+
+
+
+
+    
+
+
+      
+
+
+
+      chooseName();
 
 
     // Don't edit the code below here!
 
-    const section = document.querySelector('section');
+;
 
-    section.appendChild(para);
+    
 
   </script>
 
